@@ -1,8 +1,8 @@
 # Journal Service (Main)
 import uvicorn
-from backend.services.journal.src.routes import app
+from .src.routes import app
 
-
+# Run the application
 def main():
     """Start the Journal Service."""
     uvicorn.run(

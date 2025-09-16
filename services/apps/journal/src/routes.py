@@ -6,7 +6,7 @@ from uuid import UUID, uuid4
 app = FastAPI(title="Journal Service")
 
 # Models
-from backend.services.journal.src.models import JournalEntry, JournalEntryCreate
+from .models import JournalEntry, Mood
 
 # In-memory storage
 journal_entries = {
