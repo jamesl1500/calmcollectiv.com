@@ -7,9 +7,9 @@ from typing import Dict, List
 SERVICES = [
     {
         "name": "journal",
-        "module": "services.journal.main:app",
+        "module": "apps.journal.main:app",
         "host": "localhost",
-        "port": 8000
+        "port": 8001
     }
     # Add more services here as needed
 ]
@@ -20,7 +20,7 @@ def start_service(service_config: Dict) -> None:
         app=service_config["module"],
         host=service_config["host"],
         port=service_config["port"],
-        reload=True
+        reload=False
     )
 
 def main():
