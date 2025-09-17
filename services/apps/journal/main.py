@@ -5,7 +5,7 @@ from .src.routes import app
 # Run the application
 def main():
     """Start the Journal Service."""
-    
+    print("Starting Journal Service...")
 
 if __name__ == "__main__":
     main()
