@@ -5,11 +5,11 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Database connection settings
-DATABASE_NAME = getenv("DATABASE_NAME", "calmcollectiv_db")
-DATABASE_USER = getenv("DATABASE_USER", "jamesl1500")
-DATABASE_PASSWORD = getenv("DATABASE_PASSWORD", "Cooley12%")
+DATABASE_NAME = getenv("DATABASE_NAME", "db-name")
+DATABASE_USER = getenv("DATABASE_USER", "db-user")
+DATABASE_PASSWORD = getenv("DATABASE_PASSWORD", "db-password")
 DATABASE_HOST = getenv("DATABASE_HOST", "localhost")
-DATABASE_PORT = getenv("DATABASE_PORT", "8889")
+DATABASE_PORT = getenv("DATABASE_PORT", "3306")
 
 # Construct the database URL
 DATABASE_URL = f"mysql+pymysql://{DATABASE_USER}:{DATABASE_PASSWORD}@{DATABASE_HOST}:{DATABASE_PORT}/{DATABASE_NAME}"

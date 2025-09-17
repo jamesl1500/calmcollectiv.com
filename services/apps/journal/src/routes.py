@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException, status
 from typing import List
 from datetime import datetime
 from uuid import UUID, uuid4
+from .schemas import JournalEntryCreate
 
 app = FastAPI(title="Journal Service")
 
